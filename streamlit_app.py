@@ -18,7 +18,10 @@ def load_vgg16_model():
 vgg16_model = load_vgg16_model()  # Create VGG16 model
 
 # Load the trained model
-model = load_model('mymodel.h5')
+def load_custom_model():
+    model = load_model('mymodel.h5')
+    return model  
+model = load_custom_model()
 
 # Load the tokenizer from a file
 with open('tokenizer.pkl', 'rb') as tokenizer_file:
