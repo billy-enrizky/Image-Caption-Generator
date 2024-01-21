@@ -19,7 +19,7 @@ vgg16_model = load_vgg16_model()  # Create VGG16 model
 
 # Load the trained model
 def load_custom_model():
-    model = load_model('mymodel.h5')
+    model = load_model("mymodel.h5")
     return model  
 model = load_custom_model()
 
